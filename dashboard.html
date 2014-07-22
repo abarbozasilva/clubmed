@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Painel administrativo | ClubMedCar" />
+	<meta name="author" content="" />
+	
+	<title>Dashboard | Clubmedcar</title>
+
+	<link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/neon-core.css">
+	<link rel="stylesheet" href="assets/css/neon-theme.css">
+	<link rel="stylesheet" href="assets/css/neon-forms.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+
+	<!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body class="page-body  page-fade">
+
+<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->	
+	
+	<div class="sidebar-menu">
+		
+			
+		<header class="logo-env">
+			
+			<!-- logo -->
+			<div class="logo">
+				<a href="index.html">
+					<img src="assets/images/logo-cmc-neg.png" width="140" alt="" />
+				</a>
+			</div>
+			
+						<!-- logo collapse icon -->
+						
+			<div class="sidebar-collapse">
+				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+									
+			
+			<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+			<div class="sidebar-mobile-menu visible-xs">
+				<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+		</header>
+				
+		
+		<ul id="main-menu" class="">
+			<li class="active">
+				<a href="dashboard.html">
+					<i class="entypo-gauge"></i>
+					<span>Painel</span>
+				</a>
+			</li>
+			<li>
+				<a href="ocorrencias.html">
+					<i class="entypo-megaphone"></i>
+					<span>Ocorrências</span>
+				</a>
+			</li>			
+			<li>
+				<a href="clientes.html">
+					<i class="entypo-users"></i>
+					<span>Clientes</span>
+				</a>
+			</li>
+			<li>
+				<a href="vistorias.html">
+					<i class="entypo-search"></i>
+					<span>Vistoria</span>
+				</a>
+			</li>
+			<li>
+				<a href="revisoes.html">
+					<i class="entypo-tools"></i>
+					<span>Revisões</span>
+				</a>
+			</li>			
+			<li>
+				<a href="index.html">
+					<i class="glyphicon glyphicon-usd"></i>
+					<span>Pagamentos</span>
+				</a>
+				<ul>
+					<li>
+						<a href="layout-collapsed-sidebar.html">
+							<span>Cobrança inicial</span>
+						</a>
+					</li>
+					<li>
+						<a href="layout-fixed-sidebar.html">
+							<span>Pagamentos</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="vistoriadores.html">
+					<i class="entypo-eye"></i>
+					<span>Vistoriadores</span>
+				</a>
+			</li>
+			<li>
+				<a href="oficinas.html">
+					<i class="entypo-cog"></i>
+					<span>Oficinas</span>
+				</a>		
+			</li>
+			<li>
+				<a href="reboques.html">
+					<i class="glyphicon glyphicon-map-marker"></i>
+					<span>Reboques</span>
+				</a>
+			</li>
+			<li>
+				<a href="relatorios.html">
+					<i class="entypo-chart-area"></i>
+					<span>Relatórios</span>
+				</a>
+			</li>
+			<li>
+				<a href="funcionarios.html">
+					<i class="entypo-vcard"></i>
+					<span>Funcionários</span>
+				</a>
+			</li>
+		</ul>
+				
+	</div>	
+<div class="main-content">
+	<div class="row">
+	
+	<!-- Profile Info and Notifications -->
+	<div class="col-md-6 col-sm-8 clearfix">
+		
+		<ul class="user-info pull-left pull-none-xsm">
+		
+						<!-- Profile Info -->
+			<li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
+				
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<img src="assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
+					Anderson Barboza
+				</a>
+				
+				<ul class="dropdown-menu">
+					
+					<!-- Reverse Caret -->
+					<li class="caret"></li>
+					
+					<!-- Profile sub-links -->
+					<li>
+						<a href="#">
+							<i class="entypo-user"></i>
+							Editar Perfil
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+				
+	</div>
+	
+	
+	<!-- Raw Links -->
+	<div class="col-md-6 col-sm-4 clearfix hidden-xs">
+		
+		<ul class="list-inline links-list pull-right">
+			<li>
+				<a href="extra-login.html">
+					Sair <i class="entypo-logout right"></i>
+				</a>
+			</li>
+		</ul>
+		
+	</div>
+	
+	</div>
+
+<hr />
+
+<script type="text/javascript">
+jQuery(document).ready(function($) 
+{
+
+	$(".monthly-sales").sparkline([1,2,3,5,6,7,2,3,3,4,3,5,7,2,4,3,5,4,5,6,3,2], {
+		type: 'bar',
+		barColor: '#485671',
+		height: '80px',
+		barWidth: 10,
+		barSpacing: 2
+	});	
+});
+
+</script>
+
+
+<div class="row">
+	<div class="col-sm-9">
+		
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">Últimas ocorrências</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+				</div>
+			</div>
+
+			<table class="table table-bordered table-responsive table-hover" id="table-1">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nome</th>
+						<th>Bairro</th>
+						<th>Cidade</th>
+						<th>Estado</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>4</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>5</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>6</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>7</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>8</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>9</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>10</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+		
+	</div>
+
+
+
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-red">
+			<div class="icon"><i class="entypo-users"></i></div>
+			<div class="num" data-start="0" data-end="83" data-postfix="" data-duration="1500" data-delay="0">0</div>
+			
+			<h3>Clientes Registrados</h3>
+			<p>Total de clientes registrados no site.</p>
+		</div>
+		
+	</div>
+	
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-green">
+			<div class="icon"><i class="entypo-chart-bar"></i></div>
+			<div class="num" data-start="0" data-end="135" data-postfix="" data-duration="1500" data-delay="600">0</div>
+			
+			<h3>Visitantes no site</h3>
+			<p>Essas pessoas visitam o site hoje.</p>
+		</div>
+		
+	</div>
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-blue">
+			<div class="icon"><i class="entypo-rss"></i></div>
+			<div class="num" data-start="0" data-end="52" data-postfix="" data-duration="1500" data-delay="1800">0</div>
+			
+			<h3>Assinantes</h3>
+			<p>Total de assinantes da nossa newsletter.</p>
+		</div>
+		
+	</div>
+	
+</div>
+
+<br />
+<div class="row">
+	<div class="col-sm-6">
+		
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">Últimas vistorias</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+				</div>
+			</div>
+
+			<table class="table table-bordered table-responsive table-hover" id="table-1">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nome</th>
+						<th>Bairro</th>
+						<th>Cidade</th>
+						<th>Estado</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>4</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>5</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>6</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>7</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>8</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>9</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>10</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+		
+	</div>
+	<div class="col-sm-6">
+		
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">Últimos Cadastros</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+				</div>
+			</div>
+
+			<table class="table table-bordered table-responsive table-hover" id="table-1">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Nome</th>
+						<th>Bairro</th>
+						<th>Cidade</th>
+						<th>Estado</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>4</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>5</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>6</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>7</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>8</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>9</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+					<tr>
+						<td>10</td>
+						<td>Anderson Barboza</td>
+						<td>Bonsucesso</td>
+						<td >Rio de Janeiro</td>
+						<td >RJ</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+		
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		
+		<div class="panel panel-primary">
+			<table class="table table-bordered table-responsive">
+				<thead>
+					<tr>
+						<th class="padding-bottom-none text-center">
+							<br />
+							<br />
+							<span class="monthly-sales"></span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="panel-heading">
+							<h4>Cadastros por dia</h4>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<br />
+
+
+
+<br />
+
+<footer class="main">
+	&copy; 2014 <strong>ClubMedCar</strong> - Desenvolvido por <a href="http://aistudio.com.br" target="_blank">AISTUDIO</a>
+</footer>	
+</div>
+	
+	
+	<!-- Bottom stylesheet -->
+	<link rel="stylesheet" href="assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/gsap/main-gsap.js"></script>
+	<script src="assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/neon-api.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+	<script src="assets/js/raphael-min.js"></script>
+	<script src="assets/js/morris.min.js"></script>
+	<script src="assets/js/toastr.js"></script>
+	<script src="assets/js/neon-chat.js"></script>
+	<script src="assets/js/neon-custom.js"></script>
+	<script src="assets/js/neon-demo.js"></script>
+
+</body>
+</html>
